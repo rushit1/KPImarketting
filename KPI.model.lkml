@@ -9,3 +9,7 @@ explore: acticity_count {
 explore: campaing_summary_full {
   persist_for: "24 hour"
 }
+
+explore: email_details {
+  persist_for: "24 hour"
+}

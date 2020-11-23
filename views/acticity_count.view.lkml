@@ -232,8 +232,20 @@ view: acticity_count {
     sql: ${TABLE}."SEP" ;;
   }
 
+  measure: q1_tot_sum {
+    type: sum
+    sql: ${TABLE}."Q1_TOT" ;;
+    drill_fields: []
+    link: {
+      label: "Q1 Emails"
+      url: "/explore/KPI/email_details?fields=email_details.Send_Date,email_details.Email_Name,email_details.Subject,email_details.Campaign"
+    }
+  }
+
+
   measure: count {
     type: count
     drill_fields: []
   }
+
 }
